@@ -1,5 +1,5 @@
 # Basic Info
-This is a simple command-line dll injector, programmed in C++. It utilizes the basic WINAPI functions that every dll injector uses, such as OpenProcess, 
+This is a simple command-line dll injector, written in C++. It utilizes the basic WINAPI functions that every dll injector uses, such as OpenProcess, 
 VirtualAllocEx, WriteProcessMemory, and CreateRemoteThread.
 
 # How It Works
