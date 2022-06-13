@@ -13,15 +13,14 @@ That's it. If it seems kinda complicated, that's because 1) I am bad at explaini
 # Usage
 
 ```
-C:\prancing_pony\gangsterprankster>dll-injector.exe -i 20772 "C:\jenny\example-dll.dll"
+C:\prancing_pony\gangsterprankster>dll-injector.exe -i 12345 -dll "C:\jenny\example-dll.dll"
 ```
-I was lazy with the argument passing stuff, so the things have to be on the order like the above.
 
-1st: -i
-2nd: process ID
-3rd: path to your dll
+-i: define the process ID of the target process
+-dll: define the path to your dll which is to be injected
+-n (not recommended): define the name with which to look for process ID
 
-They have to be like that or it won't work. If you look at the source you might've noticed how you don't HAVE to input "-i", then it will take in the name of the process. That cannot be trusted and it hardly ever works. You could try it if it works on your machine, but for some reason on my PC the szExeFile doesn't have any processes, so it might even work on your machine. But if you want to be sure, use some software to find out the process id of your process and use -i to pass that in. Using that will work. Also, if the path of your dll contains spaces, remember to wrap them with double-quotes, like this "C:\Users\Jackob Manningham\dll.dll". Otherwise it will treat C:\Users\Jackob AND Manningham\dll.dll as different arguments, which will not pass the argument check. If you want to ask a series of questions, then my discord is kutch#1290. Feel free to contact on any manner, I don't bite, unless you want me to.
+The -n cannot be trusted and it hardly ever works. You could try it if it works on your machine, but for some reason on my PC the szExeFile doesn't have any processes, so it might even work on your machine. But if you don't want to mess around, use some software to find out the process id of your process and use -i to pass that in. Using that will work. Also, if the path of your dll contains spaces, remember to wrap them with double-quotes, like this "C:\Users\Jackob Manningham\dll.dll". Otherwise it will treat C:\Users\Jackob AND Manningham\dll.dll as different arguments, which will not pass the argument check. If you want to ask a series of questions, then my discord is kutch#1290. Feel free to contact on any manner, I don't bite, unless you want me to.
 
 ```
 IMPORTANT: Remember to run the program as an ADMINISTRATOR, otherwise you might run to some issues!
